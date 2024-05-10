@@ -1,0 +1,662 @@
+ff4_hf    1990m02 - 2016m12   #internal NaNs: 0
+sp500_hf  1990m02 - 2016m12   #internal NaNs: 1
+gs1       1984m02 - 2016m12   #internal NaNs: 0
+logsp500  1984m02 - 2016m12   #internal NaNs: 0
+us_rgdp   1984m02 - 2016m12   #internal NaNs: 0
+us_gdpdef 1984m02 - 2016m12   #internal NaNs: 0
+ebpnew    1984m02 - 2016m12   #internal NaNs: 0
+ 
+No need to truncate the sample
+Number of observations: 395, number of variables: 7
+correl.:     ff4_hf   sp500_hf 
+ff4_hf       1.0000    -0.4264 
+sp500_hf    -0.4264     1.0000 
+
+ 
+VAR_withiid1kf
+lags: 12
+Minnesota prior
+Note: for a proper prior need sigma_deg > 6
+Note: for E(Sigma) to exist need sigma_deg > 8
+       tightness: 0.2000
+           decay: 1
+         mvector: [7×1 int32]
+        exog_std: 100000
+      sigma_data: [395×7 double]
+           sigma: [0.0517 0.4839 0.1970 3.4035 0.5266 0.0996 0.2351]
+    sigma_arlags: 12
+
+              lags: 12
+         minnesota: [1×1 struct]
+                Nm: 2
+                 Q: [425×425 double]
+              Qinv: [425×425 double]
+                 B: [85×5 double]
+    QinvB_reshaped: [85×5 double]
+                 v: 9
+                 S: [7×7 double]
+
+Sample with T = 383 and N = 7.
+Y(1,1) = NaN; Y(T,N) = -0.3336
+Number of missing values: 121
+start: 10-May-2024 11:03:05; total iterations: 20000
+{Error using <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('waitbar', '/Applications/MATLAB_R2024a.app/toolbox/matlab/uitools/waitbar.m', 111)" style="font-weight:bold">waitbar</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2024a.app/toolbox/matlab/uitools/waitbar.m',111,0)">line 111</a>)
+The second argument must be a message character vector or a handle to an existing waitbar.
+
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('VAR_withiid1kf', '/Users/gianiranzetti/Downloads/data/work_matlab/VAR_withiid1kf.m', 282)" style="font-weight:bold">VAR_withiid1kf</a> (<a href="matlab: opentoline('/Users/gianiranzetti/Downloads/data/work_matlab/VAR_withiid1kf.m',282,0)">line 282</a>)
+            waitbar(draw/nalldraws, waitbar_handle, timing_message(draw, nalldraws, timing_start))
+
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('main1', '/Users/gianiranzetti/Downloads/data/work_matlab/main1.m', 154)" style="font-weight:bold">main1</a> (<a href="matlab: opentoline('/Users/gianiranzetti/Downloads/data/work_matlab/main1.m',154,0)">line 154</a>)
+res = VAR_withiid1kf(data, prior, gssettings);
+} 
+main1
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+[Warning: Directory already exists.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('main1', '/Users/gianiranzetti/Downloads/data/work_matlab/main1.m', 47)" style="font-weight:bold">main1</a> (<a href="matlab: opentoline('/Users/gianiranzetti/Downloads/data/work_matlab/main1.m',47,0)">line 47</a>)] 
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+ff4_hf    1990m02 - 2016m12   #internal NaNs: 0
+sp500_hf  1990m02 - 2016m12   #internal NaNs: 1
+gs1       1984m02 - 2016m12   #internal NaNs: 0
+logsp500  1984m02 - 2016m12   #internal NaNs: 0
+us_rgdp   1984m02 - 2016m12   #internal NaNs: 0
+us_gdpdef 1984m02 - 2016m12   #internal NaNs: 0
+ebpnew    1984m02 - 2016m12   #internal NaNs: 0
+ 
+No need to truncate the sample
+Number of observations: 395, number of variables: 7
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+ff4_hf    1990m02 - 2016m12   #internal NaNs: 0
+sp500_hf  1990m02 - 2016m12   #internal NaNs: 1
+gs1       1984m02 - 2016m12   #internal NaNs: 0
+logsp500  1984m02 - 2016m12   #internal NaNs: 0
+us_rgdp   1984m02 - 2016m12   #internal NaNs: 0
+us_gdpdef 1984m02 - 2016m12   #internal NaNs: 0
+ebpnew    1984m02 - 2016m12   #internal NaNs: 0
+ 
+No need to truncate the sample
+Number of observations: 395, number of variables: 7
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+correl.:     ff4_hf   sp500_hf 
+ff4_hf       1.0000    -0.4264 
+sp500_hf    -0.4264     1.0000 
+
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+ 
+VAR_withiid1kf
+lags: 12
+Minnesota prior
+Note: for a proper prior need sigma_deg > 6
+Note: for E(Sigma) to exist need sigma_deg > 8
+       tightness: 0.2000
+           decay: 1
+         mvector: [7×1 int32]
+        exog_std: 100000
+      sigma_data: [395×7 double]
+           sigma: [0.0517 0.4839 0.1970 3.4035 0.5266 0.0996 0.2351]
+    sigma_arlags: 12
+
+              lags: 12
+         minnesota: [1×1 struct]
+                Nm: 2
+                 Q: [425×425 double]
+              Qinv: [425×425 double]
+                 B: [85×5 double]
+    QinvB_reshaped: [85×5 double]
+                 v: 9
+                 S: [7×7 double]
+
+Sample with T = 383 and N = 7.
+Y(1,1) = NaN; Y(T,N) = -0.3336
+Number of missing values: 121
+start: 10-May-2024 11:07:22; total iterations: 20000
+{Error using <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('waitbar', '/Applications/MATLAB_R2024a.app/toolbox/matlab/uitools/waitbar.m', 111)" style="font-weight:bold">waitbar</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2024a.app/toolbox/matlab/uitools/waitbar.m',111,0)">line 111</a>)
+The second argument must be a message character vector or a handle to an existing waitbar.
+
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('VAR_withiid1kf', '/Users/gianiranzetti/Downloads/data/work_matlab/VAR_withiid1kf.m', 282)" style="font-weight:bold">VAR_withiid1kf</a> (<a href="matlab: opentoline('/Users/gianiranzetti/Downloads/data/work_matlab/VAR_withiid1kf.m',282,0)">line 282</a>)
+            waitbar(draw/nalldraws, waitbar_handle, timing_message(draw, nalldraws, timing_start))
+
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('main1', '/Users/gianiranzetti/Downloads/data/work_matlab/main1.m', 154)" style="font-weight:bold">main1</a> (<a href="matlab: opentoline('/Users/gianiranzetti/Downloads/data/work_matlab/main1.m',154,0)">line 154</a>)
+res = VAR_withiid1kf(data, prior, gssettings);
+} 
+main1
+[Warning: Directory already exists.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('main1', '/Users/gianiranzetti/Downloads/data/work_matlab/main1.m', 47)" style="font-weight:bold">main1</a> (<a href="matlab: opentoline('/Users/gianiranzetti/Downloads/data/work_matlab/main1.m',47,0)">line 47</a>)] 
+ff4_hf    1990m02 - 2016m12   #internal NaNs: 0
+sp500_hf  1990m02 - 2016m12   #internal NaNs: 1
+gs1       1984m02 - 2016m12   #internal NaNs: 0
+logsp500  1984m02 - 2016m12   #internal NaNs: 0
+us_rgdp   1984m02 - 2016m12   #internal NaNs: 0
+us_gdpdef 1984m02 - 2016m12   #internal NaNs: 0
+ebpnew    1984m02 - 2016m12   #internal NaNs: 0
+ 
+No need to truncate the sample
+Number of observations: 395, number of variables: 7
+ff4_hf    1990m02 - 2016m12   #internal NaNs: 0
+sp500_hf  1990m02 - 2016m12   #internal NaNs: 1
+gs1       1984m02 - 2016m12   #internal NaNs: 0
+logsp500  1984m02 - 2016m12   #internal NaNs: 0
+us_rgdp   1984m02 - 2016m12   #internal NaNs: 0
+us_gdpdef 1984m02 - 2016m12   #internal NaNs: 0
+ebpnew    1984m02 - 2016m12   #internal NaNs: 0
+ 
+No need to truncate the sample
+Number of observations: 395, number of variables: 7
+correl.:     ff4_hf   sp500_hf 
+ff4_hf       1.0000    -0.4264 
+sp500_hf    -0.4264     1.0000 
+
+ 
+VAR_withiid1kf
+lags: 12
+Minnesota prior
+Note: for a proper prior need sigma_deg > 6
+Note: for E(Sigma) to exist need sigma_deg > 8
+       tightness: 0.2000
+           decay: 1
+         mvector: [7×1 int32]
+        exog_std: 100000
+      sigma_data: [395×7 double]
+           sigma: [0.0517 0.4839 0.1970 3.4035 0.5266 0.0996 0.2351]
+    sigma_arlags: 12
+
+              lags: 12
+         minnesota: [1×1 struct]
+                Nm: 2
+                 Q: [425×425 double]
+              Qinv: [425×425 double]
+                 B: [85×5 double]
+    QinvB_reshaped: [85×5 double]
+                 v: 9
+                 S: [7×7 double]
+
+Sample with T = 383 and N = 7.
+Y(1,1) = NaN; Y(T,N) = -0.3336
+Number of missing values: 121
+start: 10-May-2024 11:16:12; total iterations: 2000
+elapsed 00:02:27; remain 00:00:00; end 10-May-2024 11:18:39
+    @(irfs)irfs(1,imonpol,1)>0&&irfs(2,imonpol,1)<0&&irfs(1,inews,1)>0&&irfs(2,inews,1)>0
+
+Computing sign restrictions
+Number of draws of the VAR parameters: 400
+elapsed 00:00:00; remain 00:00:02; end 10-May-2024 11:18:42; %failed: 0.00
+elapsed 00:00:01; remain 00:00:00; end 10-May-2024 11:18:40; %failed: 0.00
+total failures: 0
+Variance decomposition
+variable: ff4_hf
+shock  \  h =        24 
+mon.pol.          0.658 
+CBinfo            0.342 
+total             1.000 
+
+variable: sp500_hf
+shock  \  h =        24 
+mon.pol.          0.668 
+CBinfo            0.332 
+total             1.000 
+
+variable: gs1
+shock  \  h =        24 
+mon.pol.          0.063 
+CBinfo            0.192 
+total             0.255 
+
+variable: logsp500
+shock  \  h =        24 
+mon.pol.          0.076 
+CBinfo            0.036 
+total             0.113 
+
+variable: us_rgdp
+shock  \  h =        24 
+mon.pol.          0.036 
+CBinfo            0.028 
+total             0.064 
+
+variable: us_gdpdef
+shock  \  h =        24 
+mon.pol.          0.077 
+CBinfo            0.048 
+total             0.125 
+
+variable: ebpnew
+shock  \  h =        24 
+mon.pol.          0.069 
+CBinfo            0.043 
+total             0.112 
+
+variable  mon.pol.24   CBinfo24 
+ff4_hf        0.6577     0.3423 
+sp500_hf      0.6678     0.3322 
+gs1           0.0628     0.1924 
+logsp500      0.0764     0.0363 
+us_rgdp       0.0359     0.0279 
+us_gdpdef     0.0767     0.0478 
+ebpnew        0.0689     0.0430 
+
+horizon = 24
+variable     s1.mean     s1.q05     s1.q95    s2.mean     s2.q05     s2.q95 
+ff4_hf        0.6577     0.2065     0.9951     0.3423     0.0049     0.7935 
+sp500_hf      0.6678     0.2307     0.9980     0.3322     0.0020     0.7693 
+gs1           0.0628     0.0055     0.1935     0.1924     0.0748     0.3462 
+logsp500      0.0764     0.0130     0.1804     0.0363     0.0019     0.1195 
+us_rgdp       0.0359     0.0029     0.1093     0.0279     0.0027     0.0889 
+us_gdpdef     0.0767     0.0036     0.2231     0.0478     0.0018     0.1515 
+ebpnew        0.0689     0.0154     0.1564     0.0430     0.0066     0.1188 
+
+responses at horizon 0: quantiles of the posterior distribution
+variable       s1q50      s1q16      s1q84      s2q50      s2q16      s2q84 
+ff4_hf        0.0472     0.0302     0.0549     0.0305     0.0102     0.0465 
+sp500_hf     -0.4232    -0.4936    -0.2864     0.2663     0.0778     0.4100 
+gs1           0.0472     0.0197     0.0703     0.0579     0.0360     0.0763 
+logsp500     -0.6677    -0.8449    -0.4467     0.2832    -0.0299     0.5923 
+us_rgdp       0.0035    -0.0250     0.0332     0.0295    -0.0002     0.0595 
+us_gdpdef    -0.0109    -0.0171    -0.0049     0.0023    -0.0046     0.0096 
+ebpnew        0.0415     0.0254     0.0574    -0.0193    -0.0400     0.0027 
+
+responses at horizon 0: quantiles of the posterior distribution
+variable       s1q50       s1q5      s1q95      s2q50       s2q5      s2q95 
+ff4_hf        0.0472     0.0250     0.0573     0.0305     0.0038     0.0497 
+sp500_hf     -0.4232    -0.5147    -0.2411     0.2663     0.0231     0.4425 
+gs1           0.0472     0.0039     0.0805     0.0579     0.0231     0.0862 
+logsp500     -0.6677    -0.9850    -0.3068     0.2832    -0.1940     0.7410 
+us_rgdp       0.0035    -0.0469     0.0517     0.0295    -0.0219     0.0794 
+us_gdpdef    -0.0109    -0.0212    -0.0011     0.0023    -0.0087     0.0145 
+ebpnew        0.0415     0.0152     0.0680    -0.0193    -0.0536     0.0172 
+
+ff4_hf    1990m02 - 2016m12   #internal NaNs: 0
+sp500_hf  1990m02 - 2016m12   #internal NaNs: 1
+gs1       1984m02 - 2016m12   #internal NaNs: 0
+logsp500  1984m02 - 2016m12   #internal NaNs: 0
+us_rgdp   1984m02 - 2016m12   #internal NaNs: 0
+us_gdpdef 1984m02 - 2016m12   #internal NaNs: 0
+ebpnew    1984m02 - 2016m12   #internal NaNs: 0
+ 
+No need to truncate the sample
+Number of observations: 395, number of variables: 7
+correl.:     ff4_hf   sp500_hf 
+ff4_hf       1.0000    -0.4264 
+sp500_hf    -0.4264     1.0000 
+
+ 
+VAR_withiid1kf
+lags: 12
+Minnesota prior
+Note: for a proper prior need sigma_deg > 6
+Note: for E(Sigma) to exist need sigma_deg > 8
+       tightness: 0.2000
+           decay: 1
+         mvector: [7×1 int32]
+        exog_std: 100000
+      sigma_data: [395×7 double]
+           sigma: [0.0517 0.4839 0.1970 3.4035 0.5266 0.0996 0.2351]
+    sigma_arlags: 12
+
+              lags: 12
+         minnesota: [1×1 struct]
+                Nm: 2
+                 Q: [425×425 double]
+              Qinv: [425×425 double]
+                 B: [85×5 double]
+    QinvB_reshaped: [85×5 double]
+                 v: 9
+                 S: [7×7 double]
+
+Sample with T = 383 and N = 7.
+Y(1,1) = NaN; Y(T,N) = -0.3336
+Number of missing values: 121
+start: 10-May-2024 11:24:51; total iterations: 2000
+{Error using <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('waitbar', '/Applications/MATLAB_R2024a.app/toolbox/matlab/uitools/waitbar.m', 111)" style="font-weight:bold">waitbar</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2024a.app/toolbox/matlab/uitools/waitbar.m',111,0)">line 111</a>)
+The second argument must be a message character vector or a handle to an existing waitbar.
+
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('VAR_withiid1kf', '/Users/gianiranzetti/Downloads/data/work_matlab/VAR_withiid1kf.m', 282)" style="font-weight:bold">VAR_withiid1kf</a> (<a href="matlab: opentoline('/Users/gianiranzetti/Downloads/data/work_matlab/VAR_withiid1kf.m',282,0)">line 282</a>)
+            waitbar(draw/nalldraws, waitbar_handle, timing_message(draw, nalldraws, timing_start))
+
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('main1', '/Users/gianiranzetti/Downloads/data/work_matlab/main1.m', 154)" style="font-weight:bold">main1</a> (<a href="matlab: opentoline('/Users/gianiranzetti/Downloads/data/work_matlab/main1.m',154,0)">line 154</a>)
+res = VAR_withiid1kf(data, prior, gssettings);
+} 
+main1
+if system_dependent('IsDebugMode')==1, dbstep in; end
+if system_dependent('IsDebugMode')==1, dbstep in; end
+if system_dependent('IsDebugMode')==1, dbstep out; end
+if system_dependent('IsDebugMode')==1, dbquit; end
+main1
+[Warning: Directory already exists.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('main1', '/Users/gianiranzetti/Downloads/data/work_matlab/main1.m', 47)" style="font-weight:bold">main1</a> (<a href="matlab: opentoline('/Users/gianiranzetti/Downloads/data/work_matlab/main1.m',47,0)">line 47</a>)] 
+ff4_hf    1990m02 - 2016m12   #internal NaNs: 0
+sp500_hf  1990m02 - 2016m12   #internal NaNs: 1
+gs1       1984m02 - 2016m12   #internal NaNs: 0
+logsp500  1984m02 - 2016m12   #internal NaNs: 0
+us_rgdp   1984m02 - 2016m12   #internal NaNs: 0
+us_gdpdef 1984m02 - 2016m12   #internal NaNs: 0
+ebpnew    1984m02 - 2016m12   #internal NaNs: 0
+ 
+No need to truncate the sample
+Number of observations: 395, number of variables: 7
+ff4_hf    1990m02 - 2016m12   #internal NaNs: 0
+sp500_hf  1990m02 - 2016m12   #internal NaNs: 1
+gs1       1984m02 - 2016m12   #internal NaNs: 0
+logsp500  1984m02 - 2016m12   #internal NaNs: 0
+us_rgdp   1984m02 - 2016m12   #internal NaNs: 0
+us_gdpdef 1984m02 - 2016m12   #internal NaNs: 0
+ebpnew    1984m02 - 2016m12   #internal NaNs: 0
+ 
+No need to truncate the sample
+Number of observations: 395, number of variables: 7
+correl.:     ff4_hf   sp500_hf 
+ff4_hf       1.0000    -0.4264 
+sp500_hf    -0.4264     1.0000 
+
+ 
+VAR_withiid1kf
+lags: 12
+Minnesota prior
+Note: for a proper prior need sigma_deg > 6
+Note: for E(Sigma) to exist need sigma_deg > 8
+       tightness: 0.2000
+           decay: 1
+         mvector: [7×1 int32]
+        exog_std: 100000
+      sigma_data: [395×7 double]
+           sigma: [0.0517 0.4839 0.1970 3.4035 0.5266 0.0996 0.2351]
+    sigma_arlags: 12
+
+              lags: 12
+         minnesota: [1×1 struct]
+                Nm: 2
+                 Q: [425×425 double]
+              Qinv: [425×425 double]
+                 B: [85×5 double]
+    QinvB_reshaped: [85×5 double]
+                 v: 9
+                 S: [7×7 double]
+
+Sample with T = 383 and N = 7.
+Y(1,1) = NaN; Y(T,N) = -0.3336
+Number of missing values: 121
+start: 10-May-2024 11:25:53; total iterations: 2000
+elapsed 00:02:36; remain 00:00:00; end 10-May-2024 11:28:29
+    @(irfs)irfs(1,imonpol,1)>0&&irfs(2,imonpol,1)<0&&irfs(1,inews,1)>0&&irfs(2,inews,1)>0
+
+Computing sign restrictions
+Number of draws of the VAR parameters: 400
+elapsed 00:00:00; remain 00:00:02; end 10-May-2024 11:28:32; %failed: 0.00
+elapsed 00:00:00; remain 00:00:00; end 10-May-2024 11:28:30; %failed: 0.00
+total failures: 0
+Variance decomposition
+variable: ff4_hf
+shock  \  h =        24 
+mon.pol.          0.675 
+CBinfo            0.325 
+total             1.000 
+
+variable: sp500_hf
+shock  \  h =        24 
+mon.pol.          0.653 
+CBinfo            0.347 
+total             1.000 
+
+variable: gs1
+shock  \  h =        24 
+mon.pol.          0.066 
+CBinfo            0.191 
+total             0.257 
+
+variable: logsp500
+shock  \  h =        24 
+mon.pol.          0.072 
+CBinfo            0.037 
+total             0.109 
+
+variable: us_rgdp
+shock  \  h =        24 
+mon.pol.          0.037 
+CBinfo            0.025 
+total             0.062 
+
+variable: us_gdpdef
+shock  \  h =        24 
+mon.pol.          0.086 
+CBinfo            0.047 
+total             0.132 
+
+variable: ebpnew
+shock  \  h =        24 
+mon.pol.          0.069 
+CBinfo            0.041 
+total             0.109 
+
+variable  mon.pol.24   CBinfo24 
+ff4_hf        0.6747     0.3253 
+sp500_hf      0.6526     0.3474 
+gs1           0.0658     0.1910 
+logsp500      0.0723     0.0371 
+us_rgdp       0.0368     0.0253 
+us_gdpdef     0.0855     0.0466 
+ebpnew        0.0686     0.0407 
+
+horizon = 24
+variable     s1.mean     s1.q05     s1.q95    s2.mean     s2.q05     s2.q95 
+ff4_hf        0.6747     0.2210     0.9969     0.3253     0.0031     0.7790 
+sp500_hf      0.6526     0.2059     0.9965     0.3474     0.0035     0.7941 
+gs1           0.0658     0.0066     0.2012     0.1910     0.0606     0.3396 
+logsp500      0.0723     0.0124     0.1819     0.0371     0.0022     0.1167 
+us_rgdp       0.0368     0.0030     0.1150     0.0253     0.0025     0.0827 
+us_gdpdef     0.0855     0.0049     0.2204     0.0466     0.0014     0.1481 
+ebpnew        0.0686     0.0125     0.1648     0.0407     0.0079     0.1006 
+
+responses at horizon 0: quantiles of the posterior distribution
+variable       s1q50      s1q16      s1q84      s2q50      s2q16      s2q84 
+ff4_hf        0.0474     0.0329     0.0550     0.0298     0.0089     0.0456 
+sp500_hf     -0.4250    -0.4906    -0.2820     0.2774     0.0926     0.4197 
+gs1           0.0473     0.0219     0.0697     0.0574     0.0337     0.0748 
+logsp500     -0.6456    -0.8682    -0.4167     0.2989     0.0048     0.5960 
+us_rgdp       0.0031    -0.0262     0.0333     0.0296     0.0007     0.0597 
+us_gdpdef    -0.0117    -0.0178    -0.0058     0.0026    -0.0047     0.0097 
+ebpnew        0.0416     0.0254     0.0573    -0.0190    -0.0400     0.0005 
+
+responses at horizon 0: quantiles of the posterior distribution
+variable       s1q50       s1q5      s1q95      s2q50       s2q5      s2q95 
+ff4_hf        0.0474     0.0260     0.0568     0.0298     0.0031     0.0490 
+sp500_hf     -0.4250    -0.5125    -0.2258     0.2774     0.0299     0.4497 
+gs1           0.0473     0.0071     0.0839     0.0574     0.0230     0.0844 
+logsp500     -0.6456    -1.0246    -0.2476     0.2989    -0.1794     0.7650 
+us_rgdp       0.0031    -0.0477     0.0586     0.0296    -0.0183     0.0788 
+us_gdpdef    -0.0117    -0.0212    -0.0022     0.0026    -0.0101     0.0134 
+ebpnew        0.0416     0.0148     0.0701    -0.0190    -0.0517     0.0109 
+
+ff4_hf    1990m02 - 2016m12   #internal NaNs: 0
+sp500_hf  1990m02 - 2016m12   #internal NaNs: 1
+gs1       1984m02 - 2016m12   #internal NaNs: 0
+logsp500  1984m02 - 2016m12   #internal NaNs: 0
+us_rgdp   1984m02 - 2016m12   #internal NaNs: 0
+us_gdpdef 1984m02 - 2016m12   #internal NaNs: 0
+ebpnew    1984m02 - 2016m12   #internal NaNs: 0
+ 
+No need to truncate the sample
+Number of observations: 395, number of variables: 7
+correl.:     ff4_hf   sp500_hf 
+ff4_hf       1.0000    -0.4264 
+sp500_hf    -0.4264     1.0000 
+
+ 
+VAR_withiid1kf
+lags: 12
+Minnesota prior
+Note: for a proper prior need sigma_deg > 6
+Note: for E(Sigma) to exist need sigma_deg > 8
+       tightness: 0.2000
+           decay: 1
+         mvector: [7×1 int32]
+        exog_std: 100000
+      sigma_data: [395×7 double]
+           sigma: [0.0517 0.4839 0.1970 3.4035 0.5266 0.0996 0.2351]
+    sigma_arlags: 12
+
+              lags: 12
+         minnesota: [1×1 struct]
+                Nm: 2
+                 Q: [425×425 double]
+              Qinv: [425×425 double]
+                 B: [85×5 double]
+    QinvB_reshaped: [85×5 double]
+                 v: 9
+                 S: [7×7 double]
+
+Sample with T = 383 and N = 7.
+Y(1,1) = NaN; Y(T,N) = -0.3336
+Number of missing values: 121
+start: 10-May-2024 11:45:22; total iterations: 80
+elapsed 00:00:03; remain 00:00:00; end 10-May-2024 11:45:25
+    @(irfs)irfs(1,imonpol,1)>0&&irfs(2,imonpol,1)<0&&irfs(1,inews,1)>0&&irfs(2,inews,1)>0
+
+Computing sign restrictions
+Number of draws of the VAR parameters: 16
+elapsed 00:00:00; remain 00:00:00; end 10-May-2024 11:45:25; %failed: 0.00
+total failures: 0
+Variance decomposition
+variable: ff4_hf
+shock  \  h =        24 
+mon.pol.          0.693 
+CBinfo            0.307 
+total             1.000 
+
+variable: sp500_hf
+shock  \  h =        24 
+mon.pol.          0.626 
+CBinfo            0.374 
+total             1.000 
+
+variable: gs1
+shock  \  h =        24 
+mon.pol.          0.066 
+CBinfo            0.147 
+total             0.213 
+
+variable: logsp500
+shock  \  h =        24 
+mon.pol.          0.081 
+CBinfo            0.035 
+total             0.115 
+
+variable: us_rgdp
+shock  \  h =        24 
+mon.pol.          0.041 
+CBinfo            0.024 
+total             0.064 
+
+variable: us_gdpdef
+shock  \  h =        24 
+mon.pol.          0.074 
+CBinfo            0.028 
+total             0.102 
+
+variable: ebpnew
+shock  \  h =        24 
+mon.pol.          0.068 
+CBinfo            0.033 
+total             0.101 
+
+variable  mon.pol.24   CBinfo24 
+ff4_hf        0.6931     0.3069 
+sp500_hf      0.6265     0.3735 
+gs1           0.0658     0.1472 
+logsp500      0.0809     0.0345 
+us_rgdp       0.0406     0.0238 
+us_gdpdef     0.0736     0.0280 
+ebpnew        0.0677     0.0329 
+
+horizon = 24
+variable     s1.mean     s1.q05     s1.q95    s2.mean     s2.q05     s2.q95 
+ff4_hf        0.6931     0.2682     0.9968     0.3069     0.0032     0.7318 
+sp500_hf      0.6265     0.2155     0.9882     0.3735     0.0118     0.7845 
+gs1           0.0658     0.0042     0.1682     0.1472     0.0343     0.3703 
+logsp500      0.0809     0.0159     0.2205     0.0345     0.0029     0.0897 
+us_rgdp       0.0406     0.0049     0.1540     0.0238     0.0024     0.0880 
+us_gdpdef     0.0736     0.0143     0.1750     0.0280     0.0014     0.1029 
+ebpnew        0.0677     0.0184     0.2524     0.0329     0.0070     0.0695 
+
+responses at horizon 0: quantiles of the posterior distribution
+variable       s1q50      s1q16      s1q84      s2q50      s2q16      s2q84 
+ff4_hf        0.0518     0.0325     0.0545     0.0193     0.0047     0.0470 
+sp500_hf     -0.3513    -0.5131    -0.2483     0.3495     0.0609     0.4163 
+gs1           0.0513     0.0152     0.0765     0.0512     0.0230     0.0757 
+logsp500     -0.6705    -0.8194    -0.4246     0.2820     0.1221     0.6508 
+us_rgdp      -0.0059    -0.0254     0.0252     0.0263     0.0104     0.0634 
+us_gdpdef    -0.0085    -0.0165    -0.0041     0.0046    -0.0037     0.0085 
+ebpnew        0.0368     0.0255     0.0540    -0.0225    -0.0308     0.0002 
+
+responses at horizon 0: quantiles of the posterior distribution
+variable       s1q50       s1q5      s1q95      s2q50       s2q5      s2q95 
+ff4_hf        0.0518     0.0289     0.0566     0.0193     0.0032     0.0508 
+sp500_hf     -0.3513    -0.5356    -0.2328     0.3495     0.0547     0.4467 
+gs1           0.0513    -0.0006     0.0819     0.0512     0.0185     0.0898 
+logsp500     -0.6705    -0.9245    -0.1651     0.2820     0.0059     0.7533 
+us_rgdp      -0.0059    -0.0439     0.0411     0.0263    -0.0143     0.0869 
+us_gdpdef    -0.0085    -0.0172     0.0007     0.0046    -0.0068     0.0088 
+ebpnew        0.0368     0.0191     0.0658    -0.0225    -0.0392     0.0059 
+
