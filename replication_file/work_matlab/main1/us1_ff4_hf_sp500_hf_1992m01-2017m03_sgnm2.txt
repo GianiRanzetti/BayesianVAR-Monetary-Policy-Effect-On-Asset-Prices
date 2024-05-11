@@ -397,3 +397,818 @@ us_rgdp      -0.0020    -0.0426     0.0373    -0.0104    -0.0507     0.0269
 us_gdpdef     0.0132    -0.0016     0.0296     0.0004    -0.0148     0.0146 
 ebpnew        0.0267     0.0075     0.0445    -0.0140    -0.0346     0.0065 
 
+ff4_hf    1992m01 - 2024m01   #internal NaNs: 0
+sp500_hf  1992m01 - 2024m01   #internal NaNs: 0
+gs1       1992m01 - 2024m01   #internal NaNs: 0
+logsp500  1992m01 - 2024m01   #internal NaNs: 0
+us_rgdp   1992m01 - 2024m01   #internal NaNs: 0
+us_gdpdef 1992m01 - 2024m01   #internal NaNs: 0
+ebpnew    1992m01 - 2017m03   #internal NaNs: 0
+unemp     1992m01 - 2024m01   #internal NaNs: 0
+ 
+Truncating sample from: 1992m01-2024m01
+         to new sample: 1992m01-2017m03
+Number of observations: 300, number of variables: 8
+correl.:     ff4_hf   sp500_hf 
+ff4_hf       1.0000    -0.5884 
+sp500_hf    -0.5884     1.0000 
+
+ 
+VAR_withiid1kf
+lags: 12
+Minnesota prior
+Note: for a proper prior need sigma_deg > 7
+Note: for E(Sigma) to exist need sigma_deg > 9
+       tightness: 0.2000
+           decay: 1
+         mvector: [8×1 int32]
+        exog_std: 100000
+      sigma_data: [300×8 double]
+           sigma: [0.0555 0.5023 0.1525 4.2635 0.4841 0.1902 0.2318 0.1443]
+    sigma_arlags: 12
+
+              lags: 12
+         minnesota: [1×1 struct]
+                Nm: 2
+                 Q: [582×582 double]
+              Qinv: [582×582 double]
+                 B: [97×6 double]
+    QinvB_reshaped: [97×6 double]
+                 v: 10
+                 S: [8×8 double]
+
+Sample with T = 288 and N = 8.
+Y(1,1) = NaN; Y(T,N) = 4.4
+Number of missing values: 26
+start: 11-May-2024 16:31:54; total iterations: 80
+elapsed 00:00:05; remain 00:00:00; end 11-May-2024 16:31:59
+    @(irfs)irfs(1,imonpol,1)>0&&irfs(2,imonpol,1)<0&&irfs(1,inews,1)>0&&irfs(2,inews,1)>0
+
+Computing sign restrictions
+Number of draws of the VAR parameters: 16
+elapsed 00:00:00; remain 00:00:00; end 11-May-2024 16:31:59; %failed: 0.00
+total failures: 0
+Variance decomposition
+variable: ff4_hf
+shock  \  h =        24 
+mon.pol.          0.807 
+CBinfo            0.193 
+total             1.000 
+
+variable: sp500_hf
+shock  \  h =        24 
+mon.pol.          0.713 
+CBinfo            0.287 
+total             1.000 
+
+variable: gs1
+shock  \  h =        24 
+mon.pol.          0.033 
+CBinfo            0.067 
+total             0.100 
+
+variable: logsp500
+shock  \  h =        24 
+mon.pol.          0.046 
+CBinfo            0.020 
+total             0.066 
+
+variable: us_rgdp
+shock  \  h =        24 
+mon.pol.          0.042 
+CBinfo            0.020 
+total             0.062 
+
+variable: us_gdpdef
+shock  \  h =        24 
+mon.pol.          0.037 
+CBinfo            0.022 
+total             0.059 
+
+variable: ebpnew
+shock  \  h =        24 
+mon.pol.          0.060 
+CBinfo            0.027 
+total             0.086 
+
+variable: unemp
+shock  \  h =        24 
+mon.pol.          0.031 
+CBinfo            0.029 
+total             0.060 
+
+variable  mon.pol.24   CBinfo24 
+ff4_hf        0.8073     0.1927 
+sp500_hf      0.7131     0.2869 
+gs1           0.0334     0.0668 
+logsp500      0.0457     0.0203 
+us_rgdp       0.0420     0.0197 
+us_gdpdef     0.0375     0.0216 
+ebpnew        0.0595     0.0267 
+unemp         0.0308     0.0288 
+
+horizon = 24
+variable     s1.mean     s1.q05     s1.q95    s2.mean     s2.q05     s2.q95 
+ff4_hf        0.8073     0.4494     0.9994     0.1927     0.0006     0.5506 
+sp500_hf      0.7131     0.3034     0.9766     0.2869     0.0234     0.6966 
+gs1           0.0334     0.0080     0.0652     0.0668     0.0091     0.1747 
+logsp500      0.0457     0.0084     0.1206     0.0203     0.0013     0.0748 
+us_rgdp       0.0420     0.0047     0.1364     0.0197     0.0011     0.0875 
+us_gdpdef     0.0375     0.0062     0.0979     0.0216     0.0027     0.0558 
+ebpnew        0.0595     0.0153     0.1651     0.0267     0.0042     0.1047 
+unemp         0.0308     0.0072     0.1013     0.0288     0.0023     0.1083 
+
+responses at horizon 0: quantiles of the posterior distribution
+variable       s1q50      s1q25      s1q75      s2q50      s2q25      s2q75 
+ff4_hf        0.0514     0.0487     0.0554     0.0238     0.0147     0.0296 
+sp500_hf     -0.4425    -0.4874    -0.4061     0.2513     0.2098     0.3196 
+gs1           0.0401     0.0354     0.0437    -0.0007    -0.0075     0.0065 
+logsp500     -0.6935    -0.9400    -0.5595    -0.1022    -0.2260     0.0284 
+us_rgdp      -0.0151    -0.0382     0.0144     0.0113    -0.0147     0.0248 
+us_gdpdef     0.0131     0.0089     0.0179    -0.0084    -0.0165    -0.0038 
+ebpnew        0.0249     0.0193     0.0404    -0.0165    -0.0287    -0.0112 
+unemp        -0.0086    -0.0144    -0.0052     0.0109     0.0055     0.0180 
+
+responses at horizon 0: quantiles of the posterior distribution
+variable       s1q50      s1q10      s1q90      s2q50      s2q10      s2q90 
+ff4_hf        0.0514     0.0456     0.0585     0.0238     0.0022     0.0371 
+sp500_hf     -0.4425    -0.5006    -0.3005     0.2513     0.1171     0.4019 
+gs1           0.0401     0.0273     0.0467    -0.0007    -0.0128     0.0112 
+logsp500     -0.6935    -1.1561    -0.4351    -0.1022    -0.2383     0.0992 
+us_rgdp      -0.0151    -0.0539     0.0242     0.0113    -0.0476     0.0287 
+us_gdpdef     0.0131     0.0054     0.0255    -0.0084    -0.0253     0.0043 
+ebpnew        0.0249     0.0143     0.0480    -0.0165    -0.0341     0.0074 
+unemp        -0.0086    -0.0208     0.0041     0.0109     0.0036     0.0239 
+
+ff4_hf    1992m01 - 2024m01   #internal NaNs: 0
+sp500_hf  1992m01 - 2024m01   #internal NaNs: 0
+gs1       1992m01 - 2024m01   #internal NaNs: 0
+logsp500  1992m01 - 2024m01   #internal NaNs: 0
+us_rgdp   1992m01 - 2024m01   #internal NaNs: 0
+us_gdpdef 1992m01 - 2024m01   #internal NaNs: 0
+ebpnew    1992m01 - 2017m03   #internal NaNs: 0
+unemp     1992m01 - 2024m01   #internal NaNs: 0
+ 
+Truncating sample from: 1992m01-2024m01
+         to new sample: 1992m01-2017m03
+Number of observations: 300, number of variables: 8
+correl.:     ff4_hf   sp500_hf 
+ff4_hf       1.0000    -0.5884 
+sp500_hf    -0.5884     1.0000 
+
+ 
+VAR_withiid1kf
+lags: 12
+Minnesota prior
+Note: for a proper prior need sigma_deg > 7
+Note: for E(Sigma) to exist need sigma_deg > 9
+       tightness: 0.2000
+           decay: 1
+         mvector: [8×1 int32]
+        exog_std: 100000
+      sigma_data: [300×8 double]
+           sigma: [0.0555 0.5023 0.1525 4.2635 0.4841 0.1007 0.2318 0.1443]
+    sigma_arlags: 12
+
+              lags: 12
+         minnesota: [1×1 struct]
+                Nm: 2
+                 Q: [582×582 double]
+              Qinv: [582×582 double]
+                 B: [97×6 double]
+    QinvB_reshaped: [97×6 double]
+                 v: 10
+                 S: [8×8 double]
+
+Sample with T = 288 and N = 8.
+Y(1,1) = NaN; Y(T,N) = 4.4
+Number of missing values: 26
+start: 11-May-2024 16:33:56; total iterations: 80
+elapsed 00:00:04; remain 00:00:00; end 11-May-2024 16:34:00
+    @(irfs)irfs(1,imonpol,1)>0&&irfs(2,imonpol,1)<0&&irfs(1,inews,1)>0&&irfs(2,inews,1)>0
+
+Computing sign restrictions
+Number of draws of the VAR parameters: 16
+elapsed 00:00:00; remain 00:00:00; end 11-May-2024 16:34:00; %failed: 0.00
+total failures: 0
+Variance decomposition
+variable: ff4_hf
+shock  \  h =        24 
+mon.pol.          0.721 
+CBinfo            0.279 
+total             1.000 
+
+variable: sp500_hf
+shock  \  h =        24 
+mon.pol.          0.759 
+CBinfo            0.241 
+total             1.000 
+
+variable: gs1
+shock  \  h =        24 
+mon.pol.          0.027 
+CBinfo            0.087 
+total             0.114 
+
+variable: logsp500
+shock  \  h =        24 
+mon.pol.          0.033 
+CBinfo            0.019 
+total             0.052 
+
+variable: us_rgdp
+shock  \  h =        24 
+mon.pol.          0.029 
+CBinfo            0.020 
+total             0.048 
+
+variable: us_gdpdef
+shock  \  h =        24 
+mon.pol.          0.036 
+CBinfo            0.020 
+total             0.056 
+
+variable: ebpnew
+shock  \  h =        24 
+mon.pol.          0.034 
+CBinfo            0.027 
+total             0.061 
+
+variable: unemp
+shock  \  h =        24 
+mon.pol.          0.019 
+CBinfo            0.023 
+total             0.042 
+
+variable  mon.pol.24   CBinfo24 
+ff4_hf        0.7214     0.2786 
+sp500_hf      0.7585     0.2415 
+gs1           0.0266     0.0875 
+logsp500      0.0327     0.0193 
+us_rgdp       0.0286     0.0198 
+us_gdpdef     0.0364     0.0197 
+ebpnew        0.0338     0.0270 
+unemp         0.0186     0.0233 
+
+horizon = 24
+variable     s1.mean     s1.q05     s1.q95    s2.mean     s2.q05     s2.q95 
+ff4_hf        0.7214     0.4054     0.9983     0.2786     0.0017     0.5946 
+sp500_hf      0.7585     0.3516     0.9838     0.2415     0.0162     0.6484 
+gs1           0.0266     0.0053     0.0929     0.0875     0.0102     0.2356 
+logsp500      0.0327     0.0022     0.0936     0.0193     0.0022     0.0533 
+us_rgdp       0.0286     0.0014     0.0878     0.0198     0.0009     0.0589 
+us_gdpdef     0.0364     0.0041     0.1695     0.0197     0.0034     0.0593 
+ebpnew        0.0338     0.0070     0.0897     0.0270     0.0045     0.0757 
+unemp         0.0186     0.0040     0.0513     0.0233     0.0015     0.0663 
+
+responses at horizon 0: quantiles of the posterior distribution
+variable       s1q50      s1q25      s1q75      s2q50      s2q25      s2q75 
+ff4_hf        0.0492     0.0413     0.0557     0.0324     0.0109     0.0390 
+sp500_hf     -0.4648    -0.4870    -0.3769     0.2001     0.1004     0.3458 
+gs1           0.0374     0.0316     0.0449     0.0099    -0.0022     0.0214 
+logsp500     -0.6692    -0.8986    -0.3883    -0.2711    -0.4749     0.1108 
+us_rgdp      -0.0044    -0.0306     0.0067    -0.0272    -0.0455     0.0002 
+us_gdpdef    -0.0090    -0.0166    -0.0079    -0.0007    -0.0043     0.0052 
+ebpnew        0.0208     0.0141     0.0275    -0.0138    -0.0226    -0.0060 
+unemp        -0.0167    -0.0267    -0.0082     0.0132     0.0073     0.0241 
+
+responses at horizon 0: quantiles of the posterior distribution
+variable       s1q50      s1q10      s1q90      s2q50      s2q10      s2q90 
+ff4_hf        0.0492     0.0376     0.0590     0.0324     0.0035     0.0416 
+sp500_hf     -0.4648    -0.5022    -0.3017     0.2001     0.0692     0.3933 
+gs1           0.0374     0.0247     0.0509     0.0099    -0.0235     0.0270 
+logsp500     -0.6692    -1.0060    -0.3231    -0.2711    -0.8518     0.4101 
+us_rgdp      -0.0044    -0.0426     0.0325    -0.0272    -0.0584     0.0269 
+us_gdpdef    -0.0090    -0.0208    -0.0055    -0.0007    -0.0101     0.0104 
+ebpnew        0.0208     0.0019     0.0456    -0.0138    -0.0340     0.0068 
+unemp        -0.0167    -0.0297     0.0021     0.0132    -0.0008     0.0280 
+
+ff4_hf    1992m01 - 2024m01   #internal NaNs: 0
+sp500_hf  1992m01 - 2024m01   #internal NaNs: 0
+gs1       1992m01 - 2024m01   #internal NaNs: 0
+logsp500  1992m01 - 2024m01   #internal NaNs: 0
+us_rgdp   1992m01 - 2024m01   #internal NaNs: 0
+us_gdpdef 1992m01 - 2024m01   #internal NaNs: 0
+ebpnew    1992m01 - 2017m03   #internal NaNs: 0
+ 
+Truncating sample from: 1992m01-2024m01
+         to new sample: 1992m01-2017m03
+Number of observations: 300, number of variables: 7
+correl.:     ff4_hf   sp500_hf 
+ff4_hf       1.0000    -0.5884 
+sp500_hf    -0.5884     1.0000 
+
+ 
+VAR_withiid1kf
+lags: 12
+Minnesota prior
+Note: for a proper prior need sigma_deg > 6
+Note: for E(Sigma) to exist need sigma_deg > 8
+       tightness: 0.2000
+           decay: 1
+         mvector: [7×1 int32]
+        exog_std: 100000
+      sigma_data: [300×7 double]
+           sigma: [0.0555 0.5023 0.1525 4.2635 0.4841 0.1007 0.2318]
+    sigma_arlags: 12
+
+              lags: 12
+         minnesota: [1×1 struct]
+                Nm: 2
+                 Q: [425×425 double]
+              Qinv: [425×425 double]
+                 B: [85×5 double]
+    QinvB_reshaped: [85×5 double]
+                 v: 9
+                 S: [7×7 double]
+
+Sample with T = 288 and N = 7.
+Y(1,1) = NaN; Y(T,N) = -0.3336
+Number of missing values: 26
+start: 11-May-2024 16:35:12; total iterations: 80
+elapsed 00:00:03; remain 00:00:00; end 11-May-2024 16:35:15
+    @(irfs)irfs(1,imonpol,1)>0&&irfs(2,imonpol,1)<0&&irfs(1,inews,1)>0&&irfs(2,inews,1)>0
+
+Computing sign restrictions
+Number of draws of the VAR parameters: 16
+elapsed 00:00:00; remain 00:00:00; end 11-May-2024 16:35:15; %failed: 0.00
+total failures: 0
+Variance decomposition
+variable: ff4_hf
+shock  \  h =        24 
+mon.pol.          0.792 
+CBinfo            0.208 
+total             1.000 
+
+variable: sp500_hf
+shock  \  h =        24 
+mon.pol.          0.709 
+CBinfo            0.291 
+total             1.000 
+
+variable: gs1
+shock  \  h =        24 
+mon.pol.          0.046 
+CBinfo            0.070 
+total             0.117 
+
+variable: logsp500
+shock  \  h =        24 
+mon.pol.          0.038 
+CBinfo            0.013 
+total             0.051 
+
+variable: us_rgdp
+shock  \  h =        24 
+mon.pol.          0.043 
+CBinfo            0.014 
+total             0.056 
+
+variable: us_gdpdef
+shock  \  h =        24 
+mon.pol.          0.068 
+CBinfo            0.018 
+total             0.085 
+
+variable: ebpnew
+shock  \  h =        24 
+mon.pol.          0.058 
+CBinfo            0.023 
+total             0.081 
+
+variable  mon.pol.24   CBinfo24 
+ff4_hf        0.7918     0.2082 
+sp500_hf      0.7085     0.2915 
+gs1           0.0463     0.0703 
+logsp500      0.0377     0.0131 
+us_rgdp       0.0425     0.0139 
+us_gdpdef     0.0675     0.0175 
+ebpnew        0.0580     0.0230 
+
+horizon = 24
+variable     s1.mean     s1.q05     s1.q95    s2.mean     s2.q05     s2.q95 
+ff4_hf        0.7918     0.3888     0.9987     0.2082     0.0013     0.6112 
+sp500_hf      0.7085     0.3699     0.9941     0.2915     0.0059     0.6301 
+gs1           0.0463     0.0029     0.1247     0.0703     0.0216     0.1366 
+logsp500      0.0377     0.0027     0.1470     0.0131     0.0022     0.0436 
+us_rgdp       0.0425     0.0018     0.1249     0.0139     0.0014     0.0611 
+us_gdpdef     0.0675     0.0067     0.2464     0.0175     0.0022     0.0605 
+ebpnew        0.0580     0.0105     0.1590     0.0230     0.0047     0.0546 
+
+responses at horizon 0: quantiles of the posterior distribution
+variable       s1q50      s1q25      s1q75      s2q50      s2q25      s2q75 
+ff4_hf        0.0542     0.0467     0.0585     0.0208     0.0105     0.0351 
+sp500_hf     -0.4343    -0.4877    -0.3810     0.2821     0.1336     0.3487 
+gs1           0.0362     0.0305     0.0412     0.0100     0.0013     0.0173 
+logsp500     -0.6832    -0.9411    -0.5333    -0.1151    -0.2978     0.1340 
+us_rgdp      -0.0074    -0.0277     0.0159    -0.0097    -0.0318     0.0172 
+us_gdpdef    -0.0167    -0.0195    -0.0122     0.0002    -0.0075     0.0071 
+ebpnew        0.0236     0.0112     0.0318    -0.0082    -0.0128     0.0023 
+
+responses at horizon 0: quantiles of the posterior distribution
+variable       s1q50      s1q10      s1q90      s2q50      s2q10      s2q90 
+ff4_hf        0.0542     0.0370     0.0622     0.0208     0.0030     0.0443 
+sp500_hf     -0.4343    -0.5135    -0.3232     0.2821     0.0727     0.3900 
+gs1           0.0362     0.0233     0.0464     0.0100    -0.0092     0.0275 
+logsp500     -0.6832    -1.1451    -0.4353    -0.1151    -0.4176     0.4314 
+us_rgdp      -0.0074    -0.0321     0.0257    -0.0097    -0.0703     0.0284 
+us_gdpdef    -0.0167    -0.0208    -0.0059     0.0002    -0.0121     0.0145 
+ebpnew        0.0236     0.0065     0.0410    -0.0082    -0.0186     0.0153 
+
+ff4_hf    1992m01 - 2024m01   #internal NaNs: 0
+sp500_hf  1992m01 - 2024m01   #internal NaNs: 0
+gs1       1992m01 - 2024m01   #internal NaNs: 0
+logsp500  1992m01 - 2024m01   #internal NaNs: 0
+us_rgdp   1992m01 - 2024m01   #internal NaNs: 0
+us_gdpdef 1992m01 - 2024m01   #internal NaNs: 0
+ebpnew    1992m01 - 2017m03   #internal NaNs: 0
+ 
+Truncating sample from: 1992m01-2024m01
+         to new sample: 1992m01-2017m03
+Number of observations: 300, number of variables: 7
+correl.:     ff4_hf   sp500_hf 
+ff4_hf       1.0000    -0.5884 
+sp500_hf    -0.5884     1.0000 
+
+ 
+VAR_withiid1kf
+lags: 12
+Minnesota prior
+Note: for a proper prior need sigma_deg > 6
+Note: for E(Sigma) to exist need sigma_deg > 8
+       tightness: 0.2000
+           decay: 1
+         mvector: [7×1 int32]
+        exog_std: 100000
+      sigma_data: [300×7 double]
+           sigma: [0.0555 0.5023 0.1525 4.2635 0.4841 0.1902 0.2318]
+    sigma_arlags: 12
+
+              lags: 12
+         minnesota: [1×1 struct]
+                Nm: 2
+                 Q: [425×425 double]
+              Qinv: [425×425 double]
+                 B: [85×5 double]
+    QinvB_reshaped: [85×5 double]
+                 v: 9
+                 S: [7×7 double]
+
+Sample with T = 288 and N = 7.
+Y(1,1) = NaN; Y(T,N) = -0.3336
+Number of missing values: 26
+start: 11-May-2024 16:37:48; total iterations: 80
+elapsed 00:00:03; remain 00:00:00; end 11-May-2024 16:37:52
+    @(irfs)irfs(1,imonpol,1)>0&&irfs(2,imonpol,1)<0&&irfs(1,inews,1)>0&&irfs(2,inews,1)>0
+
+Computing sign restrictions
+Number of draws of the VAR parameters: 16
+elapsed 00:00:00; remain 00:00:00; end 11-May-2024 16:37:52; %failed: 0.00
+total failures: 0
+Variance decomposition
+variable: ff4_hf
+shock  \  h =        24 
+mon.pol.          0.666 
+CBinfo            0.334 
+total             1.000 
+
+variable: sp500_hf
+shock  \  h =        24 
+mon.pol.          0.868 
+CBinfo            0.132 
+total             1.000 
+
+variable: gs1
+shock  \  h =        24 
+mon.pol.          0.046 
+CBinfo            0.073 
+total             0.119 
+
+variable: logsp500
+shock  \  h =        24 
+mon.pol.          0.064 
+CBinfo            0.018 
+total             0.082 
+
+variable: us_rgdp
+shock  \  h =        24 
+mon.pol.          0.076 
+CBinfo            0.023 
+total             0.099 
+
+variable: us_gdpdef
+shock  \  h =        24 
+mon.pol.          0.055 
+CBinfo            0.015 
+total             0.070 
+
+variable: ebpnew
+shock  \  h =        24 
+mon.pol.          0.092 
+CBinfo            0.029 
+total             0.121 
+
+variable  mon.pol.24   CBinfo24 
+ff4_hf        0.6655     0.3345 
+sp500_hf      0.8679     0.1321 
+gs1           0.0465     0.0729 
+logsp500      0.0641     0.0179 
+us_rgdp       0.0762     0.0226 
+us_gdpdef     0.0547     0.0152 
+ebpnew        0.0921     0.0287 
+
+horizon = 24
+variable     s1.mean     s1.q05     s1.q95    s2.mean     s2.q05     s2.q95 
+ff4_hf        0.6655     0.4322     0.9607     0.3345     0.0393     0.5678 
+sp500_hf      0.8679     0.5697     0.9942     0.1321     0.0058     0.4303 
+gs1           0.0465     0.0026     0.1541     0.0729     0.0102     0.1569 
+logsp500      0.0641     0.0030     0.2291     0.0179     0.0008     0.0514 
+us_rgdp       0.0762     0.0025     0.2334     0.0226     0.0011     0.0607 
+us_gdpdef     0.0547     0.0048     0.1818     0.0152     0.0022     0.0363 
+ebpnew        0.0921     0.0129     0.2326     0.0287     0.0030     0.0755 
+
+responses at horizon 0: quantiles of the posterior distribution
+variable       s1q50      s1q25      s1q75      s2q50      s2q25      s2q75 
+ff4_hf        0.0465     0.0425     0.0526     0.0352     0.0262     0.0400 
+sp500_hf     -0.4904    -0.5059    -0.4703     0.1413     0.1063     0.2427 
+gs1           0.0408     0.0296     0.0540     0.0109     0.0019     0.0163 
+logsp500     -0.7706    -0.9932    -0.4848    -0.2239    -0.3248    -0.0559 
+us_rgdp      -0.0222    -0.0586     0.0057     0.0005    -0.0239     0.0218 
+us_gdpdef     0.0153     0.0083     0.0224    -0.0016    -0.0105     0.0028 
+ebpnew        0.0369     0.0288     0.0458    -0.0159    -0.0210     0.0018 
+
+responses at horizon 0: quantiles of the posterior distribution
+variable       s1q50      s1q10      s1q90      s2q50      s2q10      s2q90 
+ff4_hf        0.0465     0.0387     0.0554     0.0352     0.0171     0.0426 
+sp500_hf     -0.4904    -0.5359    -0.4383     0.1413     0.0636     0.3159 
+gs1           0.0408     0.0245     0.0582     0.0109    -0.0066     0.0220 
+logsp500     -0.7706    -1.1204    -0.4003    -0.2239    -0.5299     0.0646 
+us_rgdp      -0.0222    -0.0740     0.0297     0.0005    -0.0369     0.0349 
+us_gdpdef     0.0153    -0.0038     0.0272    -0.0016    -0.0166     0.0097 
+ebpnew        0.0369     0.0191     0.0541    -0.0159    -0.0325     0.0146 
+
+ff4_hf    1992m01 - 2024m01   #internal NaNs: 0
+sp500_hf  1992m01 - 2024m01   #internal NaNs: 0
+gs1       1992m01 - 2024m01   #internal NaNs: 0
+logsp500  1992m01 - 2024m01   #internal NaNs: 0
+us_rgdp   1992m01 - 2024m01   #internal NaNs: 0
+us_gdpdef 1992m01 - 2024m01   #internal NaNs: 0
+ebpnew    1992m01 - 2017m03   #internal NaNs: 0
+ 
+Truncating sample from: 1992m01-2024m01
+         to new sample: 1992m01-2017m03
+Number of observations: 300, number of variables: 7
+correl.:     ff4_hf   sp500_hf 
+ff4_hf       1.0000    -0.5884 
+sp500_hf    -0.5884     1.0000 
+
+ 
+VAR_withiid1kf
+lags: 12
+Minnesota prior
+Note: for a proper prior need sigma_deg > 6
+Note: for E(Sigma) to exist need sigma_deg > 8
+       tightness: 0.2000
+           decay: 1
+         mvector: [7×1 int32]
+        exog_std: 100000
+      sigma_data: [300×7 double]
+           sigma: [0.0555 0.5023 0.1525 4.2635 0.4841 0.1007 0.2318]
+    sigma_arlags: 12
+
+              lags: 12
+         minnesota: [1×1 struct]
+                Nm: 2
+                 Q: [425×425 double]
+              Qinv: [425×425 double]
+                 B: [85×5 double]
+    QinvB_reshaped: [85×5 double]
+                 v: 9
+                 S: [7×7 double]
+
+Sample with T = 288 and N = 7.
+Y(1,1) = NaN; Y(T,N) = -0.3336
+Number of missing values: 26
+start: 11-May-2024 16:41:44; total iterations: 80
+elapsed 00:00:03; remain 00:00:00; end 11-May-2024 16:41:48
+    @(irfs)irfs(1,imonpol,1)>0&&irfs(2,imonpol,1)<0&&irfs(1,inews,1)>0&&irfs(2,inews,1)>0
+
+Computing sign restrictions
+Number of draws of the VAR parameters: 16
+elapsed 00:00:00; remain 00:00:00; end 11-May-2024 16:41:48; %failed: 0.00
+total failures: 0
+Variance decomposition
+variable: ff4_hf
+shock  \  h =        24 
+mon.pol.          0.722 
+CBinfo            0.278 
+total             1.000 
+
+variable: sp500_hf
+shock  \  h =        24 
+mon.pol.          0.763 
+CBinfo            0.237 
+total             1.000 
+
+variable: gs1
+shock  \  h =        24 
+mon.pol.          0.059 
+CBinfo            0.076 
+total             0.134 
+
+variable: logsp500
+shock  \  h =        24 
+mon.pol.          0.036 
+CBinfo            0.027 
+total             0.063 
+
+variable: us_rgdp
+shock  \  h =        24 
+mon.pol.          0.049 
+CBinfo            0.018 
+total             0.068 
+
+variable: us_gdpdef
+shock  \  h =        24 
+mon.pol.          0.046 
+CBinfo            0.021 
+total             0.068 
+
+variable: ebpnew
+shock  \  h =        24 
+mon.pol.          0.043 
+CBinfo            0.027 
+total             0.069 
+
+variable  mon.pol.24   CBinfo24 
+ff4_hf        0.7220     0.2780 
+sp500_hf      0.7630     0.2370 
+gs1           0.0586     0.0757 
+logsp500      0.0361     0.0266 
+us_rgdp       0.0495     0.0185 
+us_gdpdef     0.0460     0.0215 
+ebpnew        0.0429     0.0265 
+
+horizon = 24
+variable     s1.mean     s1.q05     s1.q95    s2.mean     s2.q05     s2.q95 
+ff4_hf        0.7220     0.4227     0.9954     0.2780     0.0046     0.5773 
+sp500_hf      0.7630     0.3940     0.9963     0.2370     0.0037     0.6060 
+gs1           0.0586     0.0028     0.1758     0.0757     0.0130     0.1864 
+logsp500      0.0361     0.0022     0.1509     0.0266     0.0027     0.0858 
+us_rgdp       0.0495     0.0027     0.1733     0.0185     0.0005     0.0509 
+us_gdpdef     0.0460     0.0051     0.1311     0.0215     0.0022     0.0666 
+ebpnew        0.0429     0.0082     0.1248     0.0265     0.0053     0.0637 
+
+responses at horizon 0: quantiles of the posterior distribution
+variable       s1q50      s1q25      s1q75      s2q50      s2q25      s2q75 
+ff4_hf        0.0484     0.0450     0.0559     0.0327     0.0117     0.0396 
+sp500_hf     -0.4626    -0.4983    -0.3691     0.2047     0.0933     0.3359 
+gs1           0.0418     0.0356     0.0443     0.0106    -0.0049     0.0182 
+logsp500     -0.6775    -0.9319    -0.4703    -0.0496    -0.2990     0.1473 
+us_rgdp      -0.0131    -0.0442     0.0180     0.0063    -0.0129     0.0165 
+us_gdpdef    -0.0100    -0.0179    -0.0076     0.0004    -0.0080     0.0062 
+ebpnew        0.0265     0.0157     0.0378    -0.0015    -0.0126     0.0062 
+
+responses at horizon 0: quantiles of the posterior distribution
+variable       s1q50      s1q10      s1q90      s2q50      s2q10      s2q90 
+ff4_hf        0.0484     0.0378     0.0617     0.0327     0.0051     0.0440 
+sp500_hf     -0.4626    -0.5189    -0.3299     0.2047     0.0572     0.3992 
+gs1           0.0418     0.0281     0.0461     0.0106    -0.0139     0.0232 
+logsp500     -0.6775    -1.0858    -0.2068    -0.0496    -0.4036     0.3307 
+us_rgdp      -0.0131    -0.0499     0.0401     0.0063    -0.0283     0.0379 
+us_gdpdef    -0.0100    -0.0238    -0.0054     0.0004    -0.0109     0.0077 
+ebpnew        0.0265     0.0103     0.0544    -0.0015    -0.0230     0.0142 
+
+ff4_hf    1992m01 - 2024m01   #internal NaNs: 0
+sp500_hf  1992m01 - 2024m01   #internal NaNs: 0
+gs1       1992m01 - 2024m01   #internal NaNs: 0
+logsp500  1992m01 - 2024m01   #internal NaNs: 0
+us_rgdp   1992m01 - 2024m01   #internal NaNs: 0
+us_gdpdef 1992m01 - 2024m01   #internal NaNs: 0
+ebpnew    1992m01 - 2017m03   #internal NaNs: 0
+ 
+Truncating sample from: 1992m01-2024m01
+         to new sample: 1992m01-2017m03
+Number of observations: 300, number of variables: 7
+correl.:     ff4_hf   sp500_hf 
+ff4_hf       1.0000    -0.5884 
+sp500_hf    -0.5884     1.0000 
+
+ 
+VAR_withiid1kf
+lags: 12
+Minnesota prior
+Note: for a proper prior need sigma_deg > 6
+Note: for E(Sigma) to exist need sigma_deg > 8
+       tightness: 0.2000
+           decay: 1
+         mvector: [7×1 int32]
+        exog_std: 100000
+      sigma_data: [300×7 double]
+           sigma: [0.0555 0.5023 0.1525 4.2635 0.4841 0.1007 0.2318]
+    sigma_arlags: 12
+
+              lags: 12
+         minnesota: [1×1 struct]
+                Nm: 2
+                 Q: [425×425 double]
+              Qinv: [425×425 double]
+                 B: [85×5 double]
+    QinvB_reshaped: [85×5 double]
+                 v: 9
+                 S: [7×7 double]
+
+Sample with T = 288 and N = 7.
+Y(1,1) = NaN; Y(T,N) = -0.3336
+Number of missing values: 26
+start: 11-May-2024 16:42:58; total iterations: 8000
+elapsed 00:07:44; remain 00:00:00; end 11-May-2024 16:50:43
+    @(irfs)irfs(1,imonpol,1)>0&&irfs(2,imonpol,1)<0&&irfs(1,inews,1)>0&&irfs(2,inews,1)>0
+
+Computing sign restrictions
+Number of draws of the VAR parameters: 1600
+elapsed 00:00:00; remain 00:00:07; end 11-May-2024 16:50:50; %failed: 0.00
+elapsed 00:00:03; remain 00:00:00; end 11-May-2024 16:50:46; %failed: 0.00
+total failures: 0
+Variance decomposition
+variable: ff4_hf
+shock  \  h =        24 
+mon.pol.          0.750 
+CBinfo            0.250 
+total             1.000 
+
+variable: sp500_hf
+shock  \  h =        24 
+mon.pol.          0.759 
+CBinfo            0.241 
+total             1.000 
+
+variable: gs1
+shock  \  h =        24 
+mon.pol.          0.050 
+CBinfo            0.073 
+total             0.122 
+
+variable: logsp500
+shock  \  h =        24 
+mon.pol.          0.039 
+CBinfo            0.017 
+total             0.056 
+
+variable: us_rgdp
+shock  \  h =        24 
+mon.pol.          0.040 
+CBinfo            0.017 
+total             0.057 
+
+variable: us_gdpdef
+shock  \  h =        24 
+mon.pol.          0.062 
+CBinfo            0.018 
+total             0.080 
+
+variable: ebpnew
+shock  \  h =        24 
+mon.pol.          0.045 
+CBinfo            0.025 
+total             0.070 
+
+variable  mon.pol.24   CBinfo24 
+ff4_hf        0.7501     0.2499 
+sp500_hf      0.7591     0.2409 
+gs1           0.0497     0.0727 
+logsp500      0.0393     0.0165 
+us_rgdp       0.0399     0.0169 
+us_gdpdef     0.0624     0.0178 
+ebpnew        0.0446     0.0251 
+
+horizon = 24
+variable     s1.mean     s1.q05     s1.q95    s2.mean     s2.q05     s2.q95 
+ff4_hf        0.7501     0.3956     0.9974     0.2499     0.0026     0.6044 
+sp500_hf      0.7591     0.3930     0.9974     0.2409     0.0026     0.6070 
+gs1           0.0497     0.0043     0.1685     0.0727     0.0066     0.1786 
+logsp500      0.0393     0.0027     0.1250     0.0165     0.0014     0.0514 
+us_rgdp       0.0399     0.0020     0.1294     0.0169     0.0010     0.0582 
+us_gdpdef     0.0624     0.0059     0.1833     0.0178     0.0014     0.0573 
+ebpnew        0.0446     0.0073     0.1226     0.0251     0.0047     0.0664 
+
+responses at horizon 0: quantiles of the posterior distribution
+variable       s1q50      s1q25      s1q75      s2q50      s2q25      s2q75 
+ff4_hf        0.0517     0.0440     0.0563     0.0268     0.0143     0.0381 
+sp500_hf     -0.4545    -0.4928    -0.3938     0.2280     0.1177     0.3264 
+gs1           0.0393     0.0328     0.0465     0.0086    -0.0015     0.0191 
+logsp500     -0.6544    -0.8453    -0.4668    -0.1462    -0.3587     0.0581 
+us_rgdp      -0.0106    -0.0318     0.0108    -0.0075    -0.0272     0.0136 
+us_gdpdef    -0.0139    -0.0181    -0.0098    -0.0007    -0.0057     0.0041 
+ebpnew        0.0244     0.0153     0.0341    -0.0087    -0.0184     0.0015 
+
+responses at horizon 0: quantiles of the posterior distribution
+variable       s1q50      s1q10      s1q90      s2q50      s2q10      s2q90 
+ff4_hf        0.0517     0.0390     0.0588     0.0268     0.0059     0.0433 
+sp500_hf     -0.4545    -0.5142    -0.3438     0.2280     0.0499     0.3749 
+gs1           0.0393     0.0266     0.0531     0.0086    -0.0102     0.0275 
+logsp500     -0.6544    -1.0020    -0.3182    -0.1462    -0.5278     0.2635 
+us_rgdp      -0.0106    -0.0536     0.0308    -0.0075    -0.0454     0.0298 
+us_gdpdef    -0.0139    -0.0215    -0.0066    -0.0007    -0.0101     0.0085 
+ebpnew        0.0244     0.0062     0.0424    -0.0087    -0.0274     0.0101 
+

@@ -25,7 +25,7 @@ mnames = {'ff4_hf','sp500_hf'}; % US baseline
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % PRIOR
-prior.lags = 12;
+prior.lags = 4;
 prior.minnesota.tightness = .2;
 prior.minnesota.decay = 1;
 prior.Nm = length(mnames);
@@ -43,8 +43,8 @@ ymdif = @(x1,x2) (x2(1)-x1(1))*12+x2(2)-x1(2);
 findym = @(x,t) find(abs(t-ym2t(x))<1e-6); % find [year month] in time vector t
 
 % Gibbs sampler settings
-gssettings.ndraws = 16;
-gssettings.burnin = 16;
+gssettings.ndraws = 1600;
+gssettings.burnin = 1600;
 gssettings.saveevery = 4;
 gssettings.computemarglik = 0;
 
@@ -63,7 +63,7 @@ mylimits = nan(length(mnames),2);
 ny1 = 5;
 switch modname
     case 'us1'
-        ynames = {'gs1','logsp500','us_rgdp','us_gdpdef','ebpnew', 'unemp'};
+        ynames = {'gs1','logsp500','us_rgdp','us_gdpdef','ebpnew'};
     otherwise
         disp(modname), error('unknown modname');
 end
