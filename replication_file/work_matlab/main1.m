@@ -45,7 +45,7 @@ findym = @(x,t) find(abs(t-ym2t(x))<1e-6); % find [year month] in time vector t
 % Gibbs sampler settings
 gssettings.ndraws = 500;
 gssettings.burnin = 500;
-gssettings.saveevery = 4;
+gssettings.saveevery = 1;
 gssettings.computemarglik = 0;
 
 % detect poorman shocks and if yes override the identification to choleski
@@ -88,7 +88,7 @@ nonst = ydict{3};
 nonst = nonst(findstrings(ynames,ydict{1}),:);
 
 % load data
-datafname = '/Users/gianiranzetti/Github/Monetary-policy-effect-on-Stock-Prices/data/industry_data/VARdata_S5HLTH Index.csv';
+datafname = '/Users/gianiranzetti/Github/Monetary-policy-effect-on-Stock-Prices/data/industry_data/VARdata_S5TELS Index.csv';
 data.Nm = length(mnames);
 data.names = [mnames ynames];
 d = importdata(datafname); dat = d.data; txt = d.colheaders;
