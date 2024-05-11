@@ -288,7 +288,7 @@ if gssettings.ndraws
             % store draws
             result.beta_draws(:,:,it_save) = BB;
             result.sigma_draws(:,:,it_save) = Sigma;
-            %result.resid_draws(:,:,it_save) = U;
+            result.resid_draws(:,:,it_save) = U;
             result.Y_draws(:,:,it_save) = Y;
             result.X_draws(:,:,it_save) = X;
             

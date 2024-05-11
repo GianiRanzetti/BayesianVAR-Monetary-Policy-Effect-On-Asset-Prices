@@ -8,8 +8,6 @@
 % appropriate lines.
 clear all, close all
 
-cd('/Users/gianiranzetti/Github/Monetary-policy-effect-on-Stock-Prices/replication file');
-
 % SAMPLE AND DATA: spl, modname, addvar
 spl = [1992 1; 2024 1];
 %spl = [1984 2; 2008 12];% Dec2008 ZLB reached
@@ -27,7 +25,7 @@ mnames = {'ff4_hf','sp500_hf'}; % US baseline
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % PRIOR
-prior.lags = 24;
+prior.lags = 12;
 prior.minnesota.tightness = .2;
 prior.minnesota.decay = 1;
 prior.Nm = length(mnames);
@@ -65,7 +63,7 @@ mylimits = nan(length(mnames),2);
 ny1 = 5;
 switch modname
     case 'us1'
-        ynames = {'gs1','logsp500','us_rgdp','us_gdpdef','ebpnew'};
+        ynames = {'gs1','logsp500','us_rgdp','us_gdpdef','ebpnew', 'unemp'};
     otherwise
         disp(modname), error('unknown modname');
 end
@@ -79,7 +77,7 @@ if ~isempty(addvar)
 end
 
 % nice_names, yylimits, nonst
-dictfname = '/Users/gianiranzetti/Github/Monetary-policy-effect-on-Stock-Prices/replication file/data_var/ydict.csv';
+dictfname = '/Users/gianiranzetti/Github/Monetary-policy-effect-on-Stock-Prices/data/ydict.csv';
 fileID = fopen(dictfname);
 ydict = textscan(fileID,'%s %q %d %f %f','Delimiter',',','HeaderLines',1);
 fclose(fileID);
@@ -90,7 +88,7 @@ nonst = ydict{3};
 nonst = nonst(findstrings(ynames,ydict{1}),:);
 
 % load data
-datafname = '/Users/gianiranzetti/Github/Monetary-policy-effect-on-Stock-Prices/Stata/data/VARdata.csv';
+datafname = '/Users/gianiranzetti/Github/Monetary-policy-effect-on-Stock-Prices/data/VARdata.csv';
 data.Nm = length(mnames);
 data.names = [mnames ynames];
 d = importdata(datafname); dat = d.data; txt = d.colheaders;
@@ -171,7 +169,7 @@ end
 vdec_mean = table_vdecomp(irfs_draws, 1:N, ss, data.names, shocknames, 24);
 
 % report the irfs:
-qtoplot = [0.5 0.16 0.84 0.05 0.95]; % quantiles to plot
+qtoplot = [0.5 0.25 0.75 0.1 0.9]; % quantiles to plot
 varnames = [mnames, ynames]; varnames_nice = [mnames_nice ynames_nice]; shocknames_nice = shocknames;
 ylimits = [];
 %ylimits = [mylimits; yylimits];

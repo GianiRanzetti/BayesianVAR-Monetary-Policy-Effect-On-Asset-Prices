@@ -1,0 +1,7 @@
+﻿name,nice_name,nonstationary,lb,ub
+gs1,1y gov bond\newline   yield (%),0,-0.1,0.25
+logsp500, S&P500\newline(100 x log),1,-2.5,1.5
+ebpnew,EBP\newline(%),0,-0.08,0.08
+us_rgdp,Real GDP\newline(100 x log),1,-0.3,0.2
+us_gdpdef,GDP deflator\newline(100 x log),1,-0.15,0.1
+unemp, Unemployment\newline(%),1,-0.15,0.1
