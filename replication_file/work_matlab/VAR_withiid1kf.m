@@ -1,4 +1,4 @@
-function result = VAR_withiid(data, prior, gssettings, printout)
+function result = VAR_withiid1kf(data, prior, gssettings, printout)
 % result = VAR_withiid(data, prior, gssettings, printout)
 % PURPOSE: inference in a VAR with some i.i.d. variables
 %

@@ -25,7 +25,7 @@ mnames = {'ff4_hf','sp500_hf'}; % US baseline
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % PRIOR
-prior.lags = 4;
+prior.lags = 12;
 prior.minnesota.tightness = .2;
 prior.minnesota.decay = 1;
 prior.Nm = length(mnames);
@@ -43,8 +43,8 @@ ymdif = @(x1,x2) (x2(1)-x1(1))*12+x2(2)-x1(2);
 findym = @(x,t) find(abs(t-ym2t(x))<1e-6); % find [year month] in time vector t
 
 % Gibbs sampler settings
-gssettings.ndraws = 1600;
-gssettings.burnin = 1600;
+gssettings.ndraws = 500;
+gssettings.burnin = 500;
 gssettings.saveevery = 4;
 gssettings.computemarglik = 0;
 
@@ -88,7 +88,7 @@ nonst = ydict{3};
 nonst = nonst(findstrings(ynames,ydict{1}),:);
 
 % load data
-datafname = '/Users/gianiranzetti/Github/Monetary-policy-effect-on-Stock-Prices/data/VARdata.csv';
+datafname = '/Users/gianiranzetti/Github/Monetary-policy-effect-on-Stock-Prices/data/industry_data/VARdata_S5HLTH Index.csv';
 data.Nm = length(mnames);
 data.names = [mnames ynames];
 d = importdata(datafname); dat = d.data; txt = d.colheaders;

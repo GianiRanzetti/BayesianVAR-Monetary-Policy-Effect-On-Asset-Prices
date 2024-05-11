@@ -1,0 +1,80 @@
+ff4_hf    -1m12 - -1m12   #internal NaNs: 0
+sp500_hf  -1m12 - -1m12   #internal NaNs: 4
+gs1       -1m12 - -1m12   #internal NaNs: 0
+logsp500  -1m12 - -1m12   #internal NaNs: 0
+us_rgdp   -1m12 - -1m12   #internal NaNs: 0
+us_gdpdef -1m12 - -1m12   #internal NaNs: 0
+ebpnew    -1m12 - -1m12   #internal NaNs: 0
+ 
+No need to truncate the sample
+Number of observations: 385, number of variables: 7
+correl.:     ff4_hf   sp500_hf 
+ff4_hf       1.0000    -0.5930 
+sp500_hf    -0.5930     1.0000 
+
+ 
+VAR_withiid1kf
+lags: 12
+Minnesota prior
+Note: for a proper prior need sigma_deg > 6
+Note: for E(Sigma) to exist need sigma_deg > 8
+       tightness: 0.2000
+           decay: 1
+         mvector: [7×1 int32]
+        exog_std: 100000
+      sigma_data: [385×7 double]
+           sigma: [NaN NaN 18.1562 4.1369 0.8275 0.1762 0.1654]
+    sigma_arlags: 12
+
+              lags: 12
+         minnesota: [1×1 struct]
+                Nm: 2
+                 Q: [425×425 double]
+              Qinv: [425×425 double]
+                 B: [85×5 double]
+    QinvB_reshaped: [85×5 double]
+                 v: 9
+                 S: [7×7 double]
+
+Sample with T = 373 and N = 7.
+Y(1,1) = NaN; Y(T,N) = 1.62
+Number of missing values: 746
+{Error using <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('chol')" style="font-weight:bold">chol</a>
+Matrix must be positive definite.
+
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('VAR_withiid1kf>logdet', '/Users/gianiranzetti/Github/Monetary-policy-effect-on-Stock-Prices/replication_file/work_matlab/VAR_withiid1kf.m', 338)" style="font-weight:bold">VAR_withiid1kf>logdet</a> (<a href="matlab: opentoline('/Users/gianiranzetti/Github/Monetary-policy-effect-on-Stock-Prices/replication_file/work_matlab/VAR_withiid1kf.m',338,0)">line 338</a>)
+U = chol(A);
+
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('VAR_withiid1kf', '/Users/gianiranzetti/Github/Monetary-policy-effect-on-Stock-Prices/replication_file/work_matlab/VAR_withiid1kf.m', 244)" style="font-weight:bold">VAR_withiid1kf</a> (<a href="matlab: opentoline('/Users/gianiranzetti/Github/Monetary-policy-effect-on-Stock-Prices/replication_file/work_matlab/VAR_withiid1kf.m',244,0)">line 244</a>)
+    logpriorSigmaconst = -0.5*prior.v*N*log(2) -multgammaln(N,prior.v/2) +0.5*prior.v*logdet(prior.S);
+
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('main1', '/Users/gianiranzetti/Github/Monetary-policy-effect-on-Stock-Prices/replication_file/work_matlab/main1.m', 132)" style="font-weight:bold">main1</a> (<a href="matlab: opentoline('/Users/gianiranzetti/Github/Monetary-policy-effect-on-Stock-Prices/replication_file/work_matlab/main1.m',132,0)">line 132</a>)
+res = VAR_withiid1kf(data, prior, gssettings);
+} 
+main1
+[Warning: Directory already exists.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('main1', '/Users/gianiranzetti/Github/Monetary-policy-effect-on-Stock-Prices/replication_file/work_matlab/main1.m', 35)" style="font-weight:bold">main1</a> (<a href="matlab: opentoline('/Users/gianiranzetti/Github/Monetary-policy-effect-on-Stock-Prices/replication_file/work_matlab/main1.m',35,0)">line 35</a>)] 
+{Error using <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('importdata', '/Applications/MATLAB_R2024a.app/toolbox/matlab/iofun/importdata.m', 139)" style="font-weight:bold">importdata</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2024a.app/toolbox/matlab/iofun/importdata.m',139,0)">line 139</a>)
+Unable to open file.
+
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('main1', '/Users/gianiranzetti/Github/Monetary-policy-effect-on-Stock-Prices/replication_file/work_matlab/main1.m', 94)" style="font-weight:bold">main1</a> (<a href="matlab: opentoline('/Users/gianiranzetti/Github/Monetary-policy-effect-on-Stock-Prices/replication_file/work_matlab/main1.m',94,0)">line 94</a>)
+d = importdata(datafname); dat = d.data; txt = d.colheaders;
+} 
+main1
+[Warning: Directory already exists.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('main1', '/Users/gianiranzetti/Github/Monetary-policy-effect-on-Stock-Prices/replication_file/work_matlab/main1.m', 35)" style="font-weight:bold">main1</a> (<a href="matlab: opentoline('/Users/gianiranzetti/Github/Monetary-policy-effect-on-Stock-Prices/replication_file/work_matlab/main1.m',35,0)">line 35</a>)] 
+{Error using <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('importdata', '/Applications/MATLAB_R2024a.app/toolbox/matlab/iofun/importdata.m', 139)" style="font-weight:bold">importdata</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2024a.app/toolbox/matlab/iofun/importdata.m',139,0)">line 139</a>)
+Unable to open file.
+
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('main1', '/Users/gianiranzetti/Github/Monetary-policy-effect-on-Stock-Prices/replication_file/work_matlab/main1.m', 94)" style="font-weight:bold">main1</a> (<a href="matlab: opentoline('/Users/gianiranzetti/Github/Monetary-policy-effect-on-Stock-Prices/replication_file/work_matlab/main1.m',94,0)">line 94</a>)
+d = importdata(datafname); dat = d.data; txt = d.colheaders;
+} 
+main1
+[Warning: Directory already exists.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('main1', '/Users/gianiranzetti/Github/Monetary-policy-effect-on-Stock-Prices/replication_file/work_matlab/main1.m', 35)" style="font-weight:bold">main1</a> (<a href="matlab: opentoline('/Users/gianiranzetti/Github/Monetary-policy-effect-on-Stock-Prices/replication_file/work_matlab/main1.m',35,0)">line 35</a>)] 
+{Error using <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('importdata', '/Applications/MATLAB_R2024a.app/toolbox/matlab/iofun/importdata.m', 139)" style="font-weight:bold">importdata</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2024a.app/toolbox/matlab/iofun/importdata.m',139,0)">line 139</a>)
+Unable to open file.
+
+Error in <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('main1', '/Users/gianiranzetti/Github/Monetary-policy-effect-on-Stock-Prices/replication_file/work_matlab/main1.m', 94)" style="font-weight:bold">main1</a> (<a href="matlab: opentoline('/Users/gianiranzetti/Github/Monetary-policy-effect-on-Stock-Prices/replication_file/work_matlab/main1.m',94,0)">line 94</a>)
+d = importdata(datafname); dat = d.data; txt = d.colheaders;
+} 
