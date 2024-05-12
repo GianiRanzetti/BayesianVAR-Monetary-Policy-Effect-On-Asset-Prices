@@ -1,6 +1,6 @@
 % This script replicates the results in:
 % Jarocinski, Karadi, Deconstructing Monetary Policy Surprises - The Role 
-% of Information Shocks, forthcoming in the AEJ:Macroeconomics.
+% of Information Shocks, forthcoming ain the AEJ:Macroeconomics.
 %
 % The script estimates a monthly VAR with high-frequency monetary policy
 % surprises and identifies shocks with sign restrictions.
@@ -43,9 +43,9 @@ ymdif = @(x1,x2) (x2(1)-x1(1))*12+x2(2)-x1(2);
 findym = @(x,t) find(abs(t-ym2t(x))<1e-6); % find [year month] in time vector t
 
 % Gibbs sampler settings
-gssettings.ndraws = 500;
-gssettings.burnin = 500;
-gssettings.saveevery = 1;
+gssettings.ndraws = 600;
+gssettings.burnin = 600;
+gssettings.saveevery = 4;
 gssettings.computemarglik = 0;
 
 % detect poorman shocks and if yes override the identification to choleski
@@ -88,7 +88,7 @@ nonst = ydict{3};
 nonst = nonst(findstrings(ynames,ydict{1}),:);
 
 % load data
-datafname = '/Users/gianiranzetti/Github/Monetary-policy-effect-on-Stock-Prices/data/industry_data/VARdata_S5TELS Index.csv';
+datafname = '/Users/gianiranzetti/Github/Monetary-policy-effect-on-Stock-Prices/data/VARdata.csv';
 data.Nm = length(mnames);
 data.names = [mnames ynames];
 d = importdata(datafname); dat = d.data; txt = d.colheaders;
