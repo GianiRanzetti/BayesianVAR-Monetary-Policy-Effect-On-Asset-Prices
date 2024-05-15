@@ -10,9 +10,7 @@ clear all, close all
 
 % SAMPLE AND DATA: spl, modname, addvar
 spl = [1992 1; 2024 1];
-%spl = [1984 2; 2008 12];% Dec2008 ZLB reached
-%spl = [1990 2; 2016 12];% Feb1999 surprises start
-%spl = [1979 7; 2016 12];% GertlerKaradi2015 sample 
+
 
 modname = 'us1'; %'us1','ea1','us2','ea2'
 addvar = '';
@@ -43,8 +41,8 @@ ymdif = @(x1,x2) (x2(1)-x1(1))*12+x2(2)-x1(2);
 findym = @(x,t) find(abs(t-ym2t(x))<1e-6); % find [year month] in time vector t
 
 % Gibbs sampler settings
-gssettings.ndraws = 600;
-gssettings.burnin = 600;
+gssettings.ndraws = 400;
+gssettings.burnin = 400;
 gssettings.saveevery = 4;
 gssettings.computemarglik = 0;
 
